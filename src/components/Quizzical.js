@@ -96,7 +96,7 @@ const Quizzical = () => {
                     style={!check ? {display: "none"} : null}
                 >
                     <h2><strong>You scored {score}/5 correct answers! </strong></h2>
-                    <button className="btn-play-again" onClick={playAgain}>Play again!</button>
+                    <button className="btn-play-again" onClick={playAgain}>Play again</button>
                 </div>
                 <footer>©John CY Liao</footer>
             </div>
