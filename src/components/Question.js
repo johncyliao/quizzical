@@ -18,6 +18,7 @@ const Question = ({
                 onClick={() => selectAnswer(id, option)}
             >
             {option}
+            <br />
             </button>
         )
     })
