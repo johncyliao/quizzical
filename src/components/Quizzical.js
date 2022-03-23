@@ -79,7 +79,7 @@ const Quizzical = () => {
     return (
         <main>
             <div className="starting-page" style={start ? {display: "none"} : null}>
-                <h1>Quizzical</h1>
+                <h1>Quizzicalz</h1>
                 <p>Powered by <a className='api-link' href="https://opentdb.com/" target="_blank">OPEN TRIVIA DATABASE</a></p>
                 <button className='btn-start' onClick={() => setStart(true)}>start</button>
                 
@@ -96,7 +96,7 @@ const Quizzical = () => {
                     style={!check ? {display: "none"} : null}
                 >
                     <h2><strong>You scored {score}/5 correct answers! </strong></h2>
-                    <button className="btn-play-again" onClick={playAgain}>Play again</button>
+                    <button className="btn-play-again" onClick={playAgain}>Play again!</button>
                 </div>
                 <footer>©John CY Liao</footer>
             </div>
