@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import Quizzical from './components/Quizzical'
 import './style.css'
 
