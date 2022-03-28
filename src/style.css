@@ -80,6 +80,11 @@ footer {
   flex-direction: column;
 }
 
+.loading {
+  text-align: center;
+  margin: 20px auto;
+}
+
 .question-title {
   font-weight: 300;
   color: #293264;

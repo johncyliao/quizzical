@@ -26,6 +26,9 @@ const Quizzical = () => {
                 )))
             setCheck(false)
             serScore(0)
+        //clear all the questions when return to the starting page, so we won't see the previous question set when we restart a new game
+        } else {
+            setAllQuestions([])
         }
     }, [start])
 
@@ -87,6 +90,9 @@ const Quizzical = () => {
             <div className="game-page" style={!start ? {display: "none"} : null}>
                 {/* <div>{questionElements}</div> */}
                 {questionElements}
+                <div className="loading">
+                    <h2 style={start && allQuestions.length === 0 ? null : {display: "none"}} >Loading ... </h2>
+                </div>
                 <button 
                     className="btn-check-answer" 
                     onClick={checkAnswer}
@@ -95,8 +101,19 @@ const Quizzical = () => {
                 <div className="result"
                     style={!check ? {display: "none"} : null}
                 >
-                    <h2><strong>You scored {score}/5 correct answers! </strong></h2>
-                    <button className="btn-play-again" onClick={playAgain}>Play again</button>
+                    <h2
+                        //  style={!start ? {display: "none"} : null} 
+                    >
+                    <strong>
+                        You scored {score}/5 correct answers! 
+                    </strong></h2>
+                    <button 
+                        className="btn-play-again" 
+                        onClick={playAgain}
+                        // style={!start ? {display: "none"} : null} 
+                    >
+                    Play again
+                    </button>
                 </div>
                 <footer>©John CY Liao</footer>
             </div>
